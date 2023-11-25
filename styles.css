@@ -52,3 +52,12 @@ body{
         box-shadow: 0 0 100px purple;
     }
 }
+.wrapper{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
