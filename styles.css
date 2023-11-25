@@ -110,3 +110,86 @@ body{
     width: 10px;
     height: 25px;
 }
+.clock-hands{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock-hands .hand{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+.clock-hands .hand i {
+    display: inline-block;
+    transform-origin: bottom;
+    border-radius: 8px;
+}
+
+/*  hour hand */
+
+.clock-hands .hour {
+    width: 320px;
+    height: 320px;
+}
+.clock-hands .hour i{
+     width: 16px;
+     height: 160px;
+     background: white;
+}
+.clock-hands .hour::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 0 5px black;
+}
+
+/* min hand */
+.clock-hands .min {
+    width: 420px;
+    height: 420px;
+}
+.clock-hands .min i{
+     width: 10px;
+     height: 210px;
+     background: yellow;
+}
+.clock-hands .min::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+    background-color: yellow;
+    border-radius: 50%;
+    box-shadow: 0 0 5px black;
+}
+
+/* second hand */
+.clock-hands .sec {
+    width: 480px;
+    height: 480px;
+}
+.clock-hands .sec i{
+     width: 4px;
+     height: calc(230px + 70px);
+     background: red;
+}
+.clock-hands .sec::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    box-shadow: 0 0 5px black;
+}
