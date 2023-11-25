@@ -61,3 +61,52 @@ body{
     justify-content: center;
     align-items: center;
 }
+.number-hours{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.number-hours span{
+    position: absolute;
+    transform: rotate(calc(var(--index)*30deg));
+    inset: 6px;
+    text-align: center;
+}
+.number-hours span p {
+    font-size: 35px;
+    transform: rotate(calc(var(--index)*-30deg));
+    color: white;
+}
+.number-hours span:nth-child(3n) p {
+    font-family: fantasy;
+    font-size: 70px;
+}
+.clock-bar-second span{
+    position: absolute;
+    transform: rotate(calc(var(--index)*6deg));
+    inset: -20px;
+    text-align: center;
+}
+.clock-bar-second span p {
+    display: inline-block;
+    width: 20px;
+    height: 12px;
+    background: white;
+    transform: translateY(1px);
+    border-radius: 5px;
+}
+.clock-bar-second span h {
+    font-size: 10px;
+    color: rgb(155, 154, 154);
+    position: absolute;
+    transform: translateY(20px);
+}
+.clock-bar-second span:nth-child(5n) h{
+    font-size: 0px;
+}
+.clock-bar-second span:nth-child(5n) p{
+    background: red;
+    width: 10px;
+    height: 25px;
+}
